@@ -10,17 +10,11 @@ class ActionScrollTo {
 		this.$link = $(link);
 
 		this.$link.on('click.' + ActionScrollTo.MODULE_NAME, (e) => {
-
 			let $target = $(this.$link.attr('href'));
-
-			console.log(Quart);
-
 			tweenMax.to('html, body', this.animationTime / 1000, {
 				scrollTop : $target.offset().top,
 				ease : Quart.easeInOut
 			});
-
-
 			return false;
 		});
 	}
@@ -30,10 +24,9 @@ class ActionScrollTo {
 	destroy() {
 		this.$link.off('.' + ActionScrollTo.MODULE_NAME);
 	}
-
 }
 
-ActionScrollTo.MODULE_NAME = 'a-toggle';
+ActionScrollTo.MODULE_NAME = 'a-scroll-to';
 
 export default ActionScrollTo;
 

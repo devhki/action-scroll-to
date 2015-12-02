@@ -2,31 +2,26 @@
 <html lang="en">
 
 <meta charset="utf-8">
-<title>Action Toggle</title>
+<title>Action Scroll to</title>
 <meta name="description" content="">
 <meta name="author" content="">
 
 <style media="screen">
-	.toggle-this {
+	.box {
 		display : block;
-		width : 100px;
-		height : 100px;
-		background-color : blue;
-	}
-
-	.toggle-this--red {
-		background-color : red;
+		width : 100%;
+		height : 100vh;
+		background-color : #f0f;
+		margin : 20px 0;
 	}
 </style>
 
-<a
-	href="#"
-	class="a-toggle"
-	data-toggle-target=".toggle-this"
-	data-toggle-class="toggle-this--red"
->Toggle box color</a>
+<a class="a-scroll-to" href="#scroll-to-this">Scroll down</a>
 
-<div class="toggle-this"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box" id="scroll-to-this">Scroll here</div>
+<div class="box"></div>
 
 
 <script src="jspm_packages/system.js"></script>
