@@ -1,0 +1,25 @@
+{
+  "name": "action-scroll-to",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "= <=>",
+  "license": "ISC",
+  "devDependencies": {
+    "jspm": "^0.16.15"
+  },
+  "jspm": {
+    "dependencies": {
+      "gsap": "npm:gsap@^1.18.0",
+      "jquery": "github:components/jquery@1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
